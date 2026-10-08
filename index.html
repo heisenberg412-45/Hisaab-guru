@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hisaab Guru</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: #FAF7F4;
+      color: #2B2A33;
+    }
+    .card {
+      width: min(680px, 92%);
+      padding: 48px;
+      background: #fff;
+      border: 1px solid #ECE7E1;
+      border-radius: 28px;
+      box-shadow: 0 6px 20px rgba(107,92,231,0.10);
+      text-align: center;
+    }
+    .icon { font-size: 56px; }
+    h1 { margin: 12px 0 8px; font-size: 42px; }
+    p { color: #7A7785; line-height: 1.6; }
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 14px 24px;
+      border-radius: 9999px;
+      background: #6B5CE7;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .note {
+      margin-top: 28px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #F3EEF9;
+      text-align: left;
+      font-size: 14px;
+    }
+    code {
+      background: #FAF7F4;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="icon">🪙</div>
+    <h1>Hisaab Guru</h1>
+    <p>
+      One site, two modes: <strong>Khata Guru</strong> for shopkeepers
+      and <strong>SpendWise</strong> for students.
+    </p>
+
+    <a class="button" href="http://localhost:8501">Open Hisaab Guru</a>
+
+    <div class="note">
+      <strong>Important:</strong> Hisaab Guru is a Python Streamlit application.
+      The main application file is <code>app.py</code>. GitHub Pages can host this
+      <code>index.html</code>, but it cannot run the Python/Streamlit backend,
+      Ollama, or Whisper itself. For the full application, run
+      <code>streamlit run app.py</code> on a machine/server that supports Python.
+    </div>
+  </main>
+</body>
+</html>
